@@ -56,15 +56,9 @@ vim.keymap.set("n", "]c", function()
 end)
 
 -- Floaterm keybindings
-vim.keymap.set("n", "<leader>nt", ":FloatermNew --height=0.25<CR>", { silent = true, noremap = true })
-vim.keymap.set("t", "<C-n><C-t>", "<C-\\><C-n>:FloatermNew --height=0.25<CR>", { silent = true, noremap = true })
-vim.keymap.set("n", "<leader>tp", ":FloatermPrev<CR>", { silent = true, noremap = true })
-vim.keymap.set("t", "<C-t><C-p>", "<C-\\><C-n>:FloatermPrev<CR>", { silent = true, noremap = true })
-vim.keymap.set("n", "<leader>tn", ":FloatermNext<CR>", { silent = true, noremap = true })
-vim.keymap.set("t", "<C-t><C-n>", "<C-\\><C-n>:FloatermNext<CR>", { silent = true, noremap = true })
-vim.keymap.set("n", "<leader>tnt", ":FloatermToggle!<CR>", { silent = true, noremap = true })
-vim.keymap.set("t", "<C-t>", "<C-\\><C-n>:FloatermToggle!<CR>", { silent = true, noremap = true })
-vim.keymap.set("n", "<leader>ts", ":FloatermSend!<CR>", { silent = true, noremap = tryue })
+vim.keymap.set("v", "<C-t><C-s>", ":ToggleTermSendVisualSelection<CR>", { silent = true, noremap = true })
+vim.keymap.set("v", "<C-t><C-v>", ":ToggleTermSendVisualLines<CR>", { silent = true, noremap = true })
+vim.keymap.set("v", "<C-t><C-l>", ":ToggleTermSendCurrentLine<CR>", { silent = true, noremap = true })
 
 -- DAP Remaps
 local dap_ok, dap = pcall(require, "dap")

@@ -49,7 +49,10 @@ return require("packer").startup(function(use)
 		},
 	})
 
-	use("voldikss/vim-floaterm")
+        use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+                require("toggleterm").setup()
+        	end
+	}
 
 	-- treesitter for better color parsing and file awareness
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
@@ -59,6 +62,9 @@ return require("packer").startup(function(use)
 
 	-- Git functionality from nvim
 	use("tpope/vim-fugitive")
+
+	-- Nifty delimiter switching
+	use("tpope/vim-surround")
 
 	-- lsp setup with mason, mason-lspconfig, and lspconfig for non metals language servers
 	use({
