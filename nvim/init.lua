@@ -1,0 +1,2 @@
+require("fresch")
+print("Hello!")
