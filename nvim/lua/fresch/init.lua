@@ -3,8 +3,7 @@ require("fresch.packer")
 require("lualine").setup()
 print("A fResch hello to you!")
 
-vim.g.python3_host_prog = "C:\\Users\\fresc\\.pyenv\\pyenv-win\\versions\\3.13.2\\python.exe"
-vim.g.ruby_host_prog = "C:\\tools\\ruby34\\bin\\ruby.exe"
+vim.g.python3_host_prog = "/Users/P2894586/.pyenv/versions/3.13.2/envs/bin/base/python"
 vim.g.loaded_perl_provider = 0
 
 -- Need to have line numbers and reverse line numbers implemented

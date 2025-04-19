@@ -9,6 +9,7 @@ metals_config.settings = {
 	showImplicitArguments = true,
 	statusBarProvider = true,
 	excludedPackages = { "akka.actor.typed.javadsl", "com.github.swagger.akka.javadsl" },
+	javaHome = "/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/",
 }
 
 -- *READ THIS*
